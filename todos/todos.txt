@@ -8,6 +8,6 @@ book covers
 X grapes
 peachy
 X latest
-newitem
+newest
 howmany
 1more
