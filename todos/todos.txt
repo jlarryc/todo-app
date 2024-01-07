@@ -11,3 +11,12 @@ X latest
 newest
 howmany
 1more
+jar
+book
+comet
+hose
+cord
+chair
+arm
+toe
+nail
