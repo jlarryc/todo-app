@@ -1,17 +1,14 @@
-click
-clock
-bug
-X toy story
-tom tom
+clickbait
 tim
-book covers
+book cover
 X grapes
 peachy
-X latest
-newest
+latest
+joey
+somewhat
+newest&greatest
 howmany
-1more
-jar
+railroad
 book
 comet
 hose
@@ -20,3 +17,6 @@ chair
 arm
 toe
 nail
+teapot
+smithsonian
+chevy car
