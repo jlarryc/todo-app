@@ -21,7 +21,7 @@ def write_todos(todos_arg, filepath=FILEPATH):
         fn.writelines(todos_arg)
 
 """ This code runs when importing functions.py OR running this module directly"""
-print("I am outside")
+print("This message is from functions.py but is outside of any functions which makes it global")
 
 """ The following code ONLY executes when running functions.py directly"""
 """ This concept is explained in lesson # 135 """
