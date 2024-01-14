@@ -5,7 +5,7 @@ FILEPATH = "todos.txt"
 def get_todos(filepath=FILEPATH):
     """ Return the todo items list from the text file located at filepath """
     try:
-        with open(filepath, "r") as fn_local:
+        with open(filepath, "r", encoding="utf-8") as fn_local:
             todos_local = fn_local.readlines()
             """ Using a list comprehension to strip \n from each line """
             # todos_local = [line.strip('\n') for line in todos_local]
@@ -17,7 +17,7 @@ def get_todos(filepath=FILEPATH):
 
 def write_todos(todos_arg, filepath=FILEPATH):
     """ Write the todo items list to the text file located at filepath """
-    with open(filepath, 'w') as fn:
+    with open(filepath, 'w', encoding="utf-8") as fn:
         fn.writelines(todos_arg)
 
 """ This code runs when importing functions.py OR running this module directly"""

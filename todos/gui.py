@@ -18,13 +18,16 @@ print(f"Current Theme is: {my_rand}:{sg.theme(my_theme[my_rand])}")
 time_label = sg.Text("",key='date_time')
 label = sg.Text("Type in a to-do")
 input_box = sg.InputText(tooltip="Enter to-do", key="todo", size=(45))
-add_button = sg.Button("Add", size=20)
+# add_button = sg.Button("Add", size=20)
+add_button = sg.Button(image_source="add.png", image_size=(40,40),key='-add-',
+                       tooltip="Add", mouseover_colors="LightBlue2")
 
 # label2 = sg.Text("Edit a ToDo")
 list_box = sg.Listbox(values=functions.get_todos(), key='todos', enable_events=True, size=(45,10))
 edit_button = sg.Button("Edit")
 
-checkoff_button = sg.Button("Complete")
+# checkoff_button = sg.Button("Complete")
+checkoff_button = sg.Button(image_source="complete.png", key='-checkoff-', image_size=(40,40), tooltip="Complete")
 
 delete_button = sg.Button("Delete")
 
@@ -48,7 +51,7 @@ while True:
     # print(2, values)
     # print(3, values['todos'])
     match event:
-        case "Add":
+        case '-add-':
             todos = functions.get_todos()
             new_todo = values['todo'] + "\n"
             todos.append(new_todo)
@@ -69,10 +72,10 @@ while True:
                 sg.popup(title="Error",custom_text="Must select a todo item to edit!",font=("Helvetica", 16))
                 print(f"{e}: Must select a todo item to edit!")
 
-        case "Checkoff":
+        case '-checkoff-':
             try:
                 todo_to_edit = values['todos'][0]
-                new_todo = f"|X| {values['todo']}"
+                new_todo = f"\u2714 {values['todo']}"
                 todos = functions.get_todos()
 
                 # values[todo_to_edit] = new_todo
