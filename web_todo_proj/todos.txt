@@ -1,0 +1,5 @@
+cook beans
+[X] Fry bacon
+Fry eggs
+[X] Fry okra
+Fry bacon

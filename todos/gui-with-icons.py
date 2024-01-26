@@ -24,7 +24,7 @@ time_label = sg.Text("",key='date_time')
 label = sg.Text("Type in a to-do")
 input_box = sg.InputText(tooltip="Enter to-do", key="todo", size=(45))
 # add_button = sg.Button("Add", size=20)
-add_button = sg.Button("Add", key='-add-',
+add_button = sg.Button(image_source="add.png", image_size=(40,40),key='-add-',
                        tooltip="Add", mouseover_colors="LightBlue2")
 
 # label2 = sg.Text("Edit a ToDo")
@@ -32,7 +32,7 @@ list_box = sg.Listbox(values=functions.get_todos(), key='todos', enable_events=T
 edit_button = sg.Button("Edit")
 
 # checkoff_button = sg.Button("Complete")
-checkoff_button = sg.Button("Ccmplete", key='-checkoff-', image_size=(40,40), tooltip="Complete")
+checkoff_button = sg.Button(image_source="complete.png", key='-checkoff-', image_size=(40,40), tooltip="Complete")
 
 delete_button = sg.Button("Delete")
 

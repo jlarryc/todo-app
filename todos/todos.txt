@@ -1,8 +1,8 @@
 trees
-✔ smoke
+smoke
 fire
 paint
+trimmed
 trim
-trim
-job
-Something to do
+Somethings to do
+cook homechef
